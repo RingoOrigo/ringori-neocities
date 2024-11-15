@@ -28,9 +28,25 @@
                 <a href="shrine.html">Continue to Shrine</a>
                 <a id="musicButton" onClick="toggleMute()" style="cursor:pointer;">Mute Music</a>
                 <a href="https://www.youtube.com/playlist?list=PLpVpBRIlzWuBhafF49DkSHb1RMyrtv390">Events Theater</a>
-                <a id="themeSelectButton" onClick="openThemeMenu()" style="cursor:pointer;" title="Coming soon!">Chapter Select</a>
+                <a id="themeSelectButton" onClick="openThemeMenu()" style="cursor:pointer;">Chapter Select</a>
                 <a href="../../Shrines/">Exit</a>
             </div>
+        </div>
+
+        <!-- This is the menu to select a new theme, each one corresponds to a title screen in Xenoblade 2 -->
+        <div id="menuContainer" style="display:none;">
+            <a onclick="setTheme(0)">Chapter 0</a>
+            <a onclick="setTheme(1)">Chapter 1</a>
+            <a onclick="setTheme(2)">Chapter 2</a>
+            <a onclick="setTheme(3)">Chapter 3</a>
+            <a onclick="setTheme(4)">Chapter 4</a>
+            <a onclick="setTheme(5)">Chapter 5</a>
+            <a onclick="setTheme(6)">Chapter 6</a>
+            <a onclick="setTheme(7)">Chapter 7</a>
+            <a onclick="setTheme(8)">Chapter 8</a>
+            <a onclick="setTheme(9)">Chapter 9</a>
+            <a onclick="setTheme(10)">Chapter 10</a>
+            <a onclick="setTheme(11)">Post-Game</a>
         </div>
     </body>
 

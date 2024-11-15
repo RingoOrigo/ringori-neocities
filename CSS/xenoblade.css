@@ -5,18 +5,18 @@
 */
 
 :root {
-    --chapterZeroBG: url("https://i.imgur.com/gBeGTk8.jpeg");
-    --chapterOneBG: url("https://i.imgur.com/TLI2GuX.jpeg");
-    --chapterTwoBG: url("https://i.imgur.com/kqOavLy.jpeg");
-    --chapterThreeBG: url("https://i.imgur.com/n65xelF.jpeg");
-    --chapterFourBG: url("https://i.imgur.com/iEm9ALE.jpeg");
-    --chapterFiveBG: url("https://i.imgur.com/FwEP5e9.jpeg");
-    --chapterSixBG: url("https://i.imgur.com/JfcKvDz.png");
-    --chapterSevenBG: url("https://i.imgur.com/kBZGQSx.png");
-    --chapterEightBG: url("https://i.imgur.com/0PPZFsD.jpeg");
-    --chapterNineBG: url("https://i.imgur.com/MijoBG9.jpeg");
-    --chapterTenBG: url("https://i.imgur.com/eBPVU0y.png");
-    --chapterPostGameBG: url("https://i.imgur.com/nvvfGnu.jpeg");
+    --chapterZeroBG: url('https://i.imgur.com/gBeGTk8.jpeg');
+    --chapterOneBG: url('https://i.imgur.com/TLI2GuX.jpeg');
+    --chapterTwoBG: url('https://i.imgur.com/kqOavLy.jpeg');
+    --chapterThreeBG: url('https://i.imgur.com/n65xelF.jpeg');
+    --chapterFourBG: url('https://i.imgur.com/iEm9ALE.jpeg');
+    --chapterFiveBG: url('https://i.imgur.com/FwEP5e9.jpeg');
+    --chapterSixBG: url('https://i.imgur.com/JfcKvDz.png');
+    --chapterSevenBG: url('https://i.imgur.com/kBZGQSx.png');
+    --chapterEightBG: url('https://i.imgur.com/0PPZFsD.jpeg');
+    --chapterNineBG: url('https://i.imgur.com/MijoBG9.jpeg');
+    --chapterTenBG: url('https://i.imgur.com/eBPVU0y.png');
+    --chapterPostGameBG: url('https://i.imgur.com/nvvfGnu.jpeg');
 }
 
 .arsenal-regular {
@@ -34,9 +34,23 @@
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* Definitions to make the animation for fading out into the title screen once clicked. */
 .fadeOut {
     animation: fadeOut ease 1s;
+    animation-iteration-count: 1;
+}
+.fadeIn {
+    animation: fadeIn ease 1s;
+    animation-iteration-count: 1;
 }
 
 /* 
@@ -134,7 +148,45 @@
     user-select: none;
 }
 
-html {
+#menuContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    justify-content: center;
+}
+
+#menuContainer a {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: #7bb1e4;
+    padding: 0px 20px 0px 20px;
+    cursor: pointer;
+    text-shadow: #1c335d 0px 0px 2px, #1c335d 0px 0px 2px, #1c335d 0px 0px 2px, #1c335d 0px 0px 2px, #1c335d 0px 0px 2px;
+}
+
+#menuContainer a:hover {
+    color: #fafdff;
+    text-shadow: #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px;
+    background-image: url("../IMG/menuHighlight.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+body {
     /* Set the background image and prevent repeating and scrolling */
     background-image: var(--chapterThreeBG);
     background-attachment: fixed;

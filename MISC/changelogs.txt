@@ -1,3 +1,8 @@
+ Release 8:
+    - Xenoblade 2 title screen replica now features a theme switcher (Chapter Select)
+    - For the most part the title screen replica is finished! The work on the actual shrine begins now!
+    - Shrines button now directly links to Xenoblade shrine as no other one will be implemented for a while.
+
 Release 7:
     - Xenblade shrine now has a mock loading screen
     - Started work on implementing theme menu within shrine
