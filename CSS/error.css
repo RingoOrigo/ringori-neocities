@@ -1,0 +1,47 @@
+:root {
+    --sekiroRed: #b7302c; 
+    --sekiroRedPulse: #79100c;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url(../FONTS/HelveticaNeue-Medium.otf) format(onetype);
+    font-style: normal;
+}
+
+@keyframes pulse {
+    0%, 30%, 43%, 66%, 88%, 100% {
+        filter:drop-shadow(0 0 5.0rem var(--sekiroRed));
+    }
+    29%, 42%, 65%, 87%, 99% {
+        filter:drop-shadow(0 0 5.0rem var(--sekiroRedPulse));
+    }
+}
+
+/* Since this page is wildly simple I'm not really bothering with differentiating things
+I'm just overwriting ALL images, headings, etc. bad practice. don't care */
+html {
+    background-color: black;
+    color: var(--sekiroRed);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation: pulse 9s infinite linear;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 24pt;
+}
+
+a {
+    width: 100%;
+    text-align: center;
+    color: var(--sekiroRed);
+    text-decoration: none;
+}

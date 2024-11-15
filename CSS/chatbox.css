@@ -1,0 +1,64 @@
+:root {
+	--linkGlow: #00c0bd;
+}
+
+#top_banner {
+	display:none;
+}
+
+.allMessages {
+	/* Set text preferences */
+	color: white;
+
+	/* Set layout preferences */
+	padding: 8px 8px 8px 8px;
+	margin-bottom: 8px;
+	width: fit-content;
+
+	/* Now make it look pretty */
+	border-style: solid;
+    border-color: rgba(0, 0, 0, 0.500);
+    border-radius: 16px;
+	background-color: rgba(0, 0, 0, 0.500);
+
+	clear: both;
+}
+
+.allMessages:hover {
+	box-shadow: 0 0 10px var(--linkGlow), 0 0 20px var(--linkGlow);
+	transition: 0.3s;
+}
+
+.received {
+	float: left;
+}
+
+.sent {
+	float: right;
+}
+
+.senderInfo {
+	color: white;
+	text-shadow: 0 0 10px var(--linkGlow), 0 0 20px var(--linkGlow);
+}
+
+#loadMore {
+    color: white;
+}
+
+#timestamp {
+	color: white;
+}
+
+#settings {
+	/* Controls the settings icon, use background-image to change icon */
+	width: 32px;
+	height: 32px;
+	background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.clker.com%2Fcliparts%2FV%2Fu%2Fo%2Fj%2FG%2Fb%2Fwhite-cog-md.png&f=1&nofb=1&ipt=44d647a72ac39fdf99a5748dd9c10346119a40d4eb87103590f6b6b62146c1a9&ipo=images);
+}
+
+#input {
+	color:white;
+    background: rgba(0, 0, 0, 0.750);
+	content: "Send a message"
+}

@@ -1,0 +1,8 @@
+Nov.13.2024
+The Xenoblade shrine is officially in progress. Xenoblade Chronicles 2 is a very special game to me, so I'm basing it mainly off of that. I want to recreate the title screen more closely, so if anyone can find a font that matches better PLEASE let me know!!!!!!! Later on, I'll hopefully have a theme switcher and change the background for each different title screen. That'll come later, though, stay tuned!
+---
+Nov.12.2024
+I did it! Blog posts are automatically updated from a single text file! 
+---
+Nov.11.2024
+I'm liking how this website is coming along :) As of right now, this section is completely manual, but I might put together a small script to automatically populate this section from a text file. Ideally an external one, even, as not to bloat the website's size. I also want to implement a more proper chatbox rather than the external guestbook that I have now. 

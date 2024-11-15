@@ -1,0 +1,253 @@
+:root {
+	--transparentOverlay: rgba(0, 0, 0, 0.420);
+	--transparent: rgba(0, 0, 0, 0);
+    --backgroundImage: url(../IMG/test2.jpg);
+    --backgroundOverlay: rgba(0, 0, 0, 0.422);
+
+    --headerColor: #FFF;
+    --linkColor: #d4fffe;
+    --linkGlow: #00c0bd;
+
+    --postBackground: hsla(0, 0%, 0%, 0.500);
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url(../FONTS/HelveticaNeue-Medium.otf) format(onetype);
+    font-style: normal;
+}
+
+#container {
+    /* Set data for centering on the screen */
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#header {
+    /* Settings to make the text look nice */
+    text-align: center;
+    color: var(--headerColor);
+    font-style: italic;
+    font-size: 24px;
+}
+
+#header img {
+    max-width: 100%;
+    
+    /* Make the image's borders fade into the background */
+    padding: 2px;
+    border-radius: 32px 32px 0px 0px;
+    mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 45%, transparent 100%);
+}
+
+#content {
+    /* Simple padding definition to allow for spacing between divs */
+    /* I've found that doing everything in multiples of four looks best. */
+    padding: 8px;
+    display: flex;
+
+    /* Now set the rest to make it look decent */
+    background: var(--transparentOverlay);
+    border-style: solid;
+    border-radius: 8px;
+    border-color: var(--transparentOverlay);
+    border-width: 6px;
+}
+
+#sidebar {
+    /* Define settings for the left sidebar. Basically just make sure it goes downward. */
+    display: flex;
+    flex-direction: column;
+
+    /* Settings for layout placement, trying to make it look decent */
+    width: 20%;
+    height: fit-content;
+    padding-right: 8px;
+    overflow-wrap: break-word;
+}
+
+#navigation h2 {
+    /* Make all headers glow */
+    text-align: center;
+    text-shadow: 0 0 10px var(--linkGlow), 0 0 20px var(--linkGlow);
+}
+
+#navigation a {
+    /* Set the colour of each link in the list and remove the underline */
+    color: var(--linkColor);
+    text-decoration: none;
+}
+
+#navigation a:hover {
+    /* Change the text to white when hovered, and enable a glow */
+    color: white;
+    text-shadow: 0 0 10px var(--linkGlow), 0 0 20px var(--linkGlow);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#navigation ul {
+    /* Remove the list indentation and the bullet before each item */
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+
+    /* Prevent highlighting the text */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+#navigation ul li {
+    /* Make each link look a bit nicer with proper spacing and larger font. */
+    padding-bottom: 8px;
+    font-size: 14pt;
+    width: 100%;
+}
+
+#main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding-left: 8px;
+    margin-left: 8px;
+    overflow-wrap: break-word;
+}
+
+#main h1 {
+    /* Make all headers glow */
+    text-shadow: 0 0 10px var(--linkGlow), 0 0 20px var(--linkGlow);
+}
+
+#main a{
+    text-decoration: none;
+    font-style: italic;
+    font-size: 10pt;
+    color: white;
+}
+
+#main ul {
+    list-style-type: none;
+    padding-left: 16px;
+    font-size: 14pt;
+}
+
+#main ul li {
+    padding-left: 16px;
+}
+
+/* Custom list icon before each entry */
+#main ul li::before {
+    content: "𖦹 ";
+}
+
+#main ul li em {
+    font-style: normal;
+    font-size: 11px;
+}
+
+#main div {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+#main a:hover {
+    /* Change the text to white when hovered, and enable a glow */
+    color: white;
+    text-shadow: 0 0 10px var(--linkGlow), 0 0 20px var(--linkGlow);
+    transition: 0.3s;
+}
+
+#footer p{
+    text-align: center;
+    font-size: 10pt;
+    overflow-wrap: break-word;
+}
+
+#paragraphText {
+    text-indent: 5%;
+    line-height: 1.5;
+}
+
+#blogContainer {
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+#blogContainer h1 {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+#postContainer {
+    height: 350px;
+    overflow-y: scroll;
+    padding: 20px 20px 0px 20px;
+}
+
+#postContainer p {
+    /* First define the background for each post. */
+    border-style: solid;
+    border-color: var(--backgroundOverlay);
+    border-radius: 4px;
+    padding: 4px 8px 4px 8px;
+    background-color: var(--postBackground);
+        
+    /* General text preference definitions */
+    text-align: center;
+    font-size: 16px;
+
+    /* Define margins to make each post flow with each other post a bit better */
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+#postContainer h3 {
+    /* Set spacing to make it flow a bit nicer with the containers */
+    margin-top: 8px;
+    margin-bottom: 4px;
+
+    /* Make the text glow <3 */
+    text-shadow: 0 0 10px var(--linkGlow), 0 0 20px var(--linkGlow);
+}
+
+#postContainer p:hover {
+    /* Make the post's bubble glow when hovered */
+    box-shadow: 0 0 10px var(--linkGlow), 0 0 20px var(--linkGlow);
+    transition: 0.3s;
+}
+
+/* Make the chattable chatbox look a bit nicer */
+#chattable {
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+#chatbox {
+    text-align: center;
+}
+
+html {
+    /* Set the background universally, making sure to take up the entire height to prevent gross repetition */
+    background-image: var(--backgroundImage);
+    background-color: var(--backgroundOverlay);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    height: 100%;
+
+    /* Universally make the text look nice. This works as a base and will most likely be overwritten on a need-to basis */
+    font-family: "Helvetica";
+    color: white;
+}
+
+p {
+    font-size: 14pt;
+}
+
+@media(orientation:portrait) {
+    #container {
+        width: 100%;
+    }
+}

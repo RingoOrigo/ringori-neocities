@@ -1,0 +1,34 @@
+Release 7:
+    - Xenblade shrine now has a mock loading screen
+    - Started work on implementing theme menu within shrine
+
+Release 6:
+    - Big progress on my Xenoblade shrine
+
+Release 5:
+    - Revamped the Personal Updates section (now functions as a blog)
+    - New Chatbox! I am forgoing the external guestbook for this embedded chat
+
+Release 4:
+    - Revamped site content, made things a bit more personable
+    - New custom list item icon
+    - New sidebar sections: Navigate (in-site links) and Links (external links)
+    - Small super temporary landing page for shrines
+    - New section for personal updates and such
+
+Release 3:
+    - Adjustments to mobile layout (looking out for you guys)
+    - New music player! Keeping it simple because I made it from scratch.
+    - New banner on top, replacing the old icky default heading.
+    - More buttons! (I will never mention them in changelogs again)
+
+Release 2:
+    - Fixed small typo in the navbar to the left
+    - Added a note for the last site update at the very bottom
+    - Fixed error in code copied from clicking my button
+    - Made a quick custom 404 Not Found page
+
+Release 1:
+    - First release!
+    - Ever notice the first heading changing every time you visit?
+    - Music player should hopefully be in the next release
