@@ -5,7 +5,7 @@
         <meta name="viewport" content = "width=device-width, initial-scale=1">
         <title>Ringori - Homage to Xenoblade 2</title>
 
-        <link rel = "stylesheet" type="text/css" href="../../../CSS/xenoblade.css">
+        <link rel = "stylesheet" type="text/css" href="../../../CSS/xenobladeTS.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arsenal&display=swap" rel="stylesheet">
@@ -20,9 +20,21 @@
         </div>
 
         <!-- This is the content displayed once the user clicks on the loading screen -->
+        <script src="../../../JS/titleScreenAudio.js"></script>
+        <audio id="audioEmbed" loop src="https://kappa.vgmsite.com/soundtracks/xenoblade-2-original-sound-version/fltdxpfxcm/2-03%20-%20%20Where%20We%20Used%20To%20Be.mp3"></audio>
+        
         <div id="container" style="display:none">
-            <script src="../../../JS/titleScreenAudio.js"></script>
-            <audio id="audioEmbed" loop src="https://kappa.vgmsite.com/soundtracks/xenoblade-2-original-sound-version/fltdxpfxcm/2-03%20-%20%20Where%20We%20Used%20To%20Be.mp3"></audio>
+            <img id="gameLogo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.launchbox-app.com%2Ff9034d91-058d-4855-be75-7a8f76678856.png&f=1&nofb=1&ipt=87b6db007aeb0fbf5d350925d6d0e1abe143f7d44195f0ec87dafd36205847dd&ipo=images">
+            <div id="menuOptions">
+                <a href="shrine.html">Continue to Shrine</a>
+                <a id="musicButton" onClick="toggleMute()" style="cursor:pointer;">Mute Music</a>
+                <a href="https://www.youtube.com/playlist?list=PLpVpBRIlzWuBhafF49DkSHb1RMyrtv390">Events Theater</a>
+                <a id="themeSelectButton" onClick="openThemeMenu()" style="cursor:pointer;">Chapter Select</a>
+                <a href="../../Shrines/">Exit</a>
+            </div>
+        </div>
+
+        <div id="containerBuffer" style="display:none;">
             <img id="gameLogo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.launchbox-app.com%2Ff9034d91-058d-4855-be75-7a8f76678856.png&f=1&nofb=1&ipt=87b6db007aeb0fbf5d350925d6d0e1abe143f7d44195f0ec87dafd36205847dd&ipo=images">
             <div id="menuOptions">
                 <a href="shrine.html">Continue to Shrine</a>
