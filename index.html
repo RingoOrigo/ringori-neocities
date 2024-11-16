@@ -1,153 +1,65 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ringori - Home</title>
+        <meta name="viewport" content = "width=device-width, initial-scale=1">
+        <title>Ringori - Homage to Xenoblade 2</title>
 
-        <link rel="stylesheet" type="text/css" href="CSS/home.css">
-        <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/emojis/1035291074870132746.webp?size=96&quality=lossless">
-        
-        <meta property="og:title" content:"Ringori - Home"/>
-        <meta property="og:description" content="Ringo's corner of the internet"/>
-        <meta property="og:url" content="https://ringori.neocities.org"/>
-        <meta property="og:image" content="https://ringori.neocities.org/IMG/ringori-banner-cropped.png"/>
-        <meta content="#27376a" data-react-helmet="true" name="theme-color" />
-
-        <script src="https://chattable.neocities.org/scripts/main.min.js"></script>
-        <script>
-            chattable.initialize({
-                stylesheet : "CSS/chatbox.css",
-            });
-            function copyButton() {
-                navigator.clipboard.writeText("<a href='https://ringori.neocities.org' target='_blank'><img src='https://ringori.neocities.org/IMG/ringori.png'></a>");
-                document.getElementById("copied").innerText="Copied! Hope to see it on your site soon <3"
-            };
-        </script>
+        <link rel = "stylesheet" type="text/css" href="../../../CSS/xenobladeTS.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arsenal&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <div id="container">
-
-            <div id="header">
-                <img src="IMG/ringori-banner-cropped.png">
-            </div>
-
-            <div id="content">
-                <div id="sidebar">
-                    <div id="navigation">
-                        <h2>Music</h2>
-                        <ul>
-                            <script src="JS/musicControls.js"></script>
-                            <li><a onclick="playPause()" id="musicButton">Play</a></li>
-                            <li><a onclick="volumeUp()" title="Volume Up">⭡</a> | <a onClick="volumeDown()" title="Volume Down">⭣</a></li>
-                            <li><a onclick="muteAudio()">Mute</a></li>
-                            <audio id="audioEmbed" loop src="https://kappa.vgmsite.com/soundtracks/xenoblade-chronicles-wii-gamerip-2010/mtpxlfxkho/39.%20Satorl%20Marsh%20%28Night%29.mp3"></audio>
-                        </ul>
-                        <h2>Navigate</h2>
-                        <ul>
-                            <li><a href="HTML/Shrines/Xenoblade">Shrines</a></li>
-                            <li><a href="#webring">Buttons</a></li>
-                            <li><a href="#changelog">Changelog</a></li>
-                            <li><a href="#about">About Me</a></li>
-                            <li><a href="#updates">Updates</a></li>
-                        </ul>
-                        <h2>Links</h2>
-                        <ul>
-                            <li><a href="https://discord.gg/SSujj5VJ9E" target="_blank">Numbuddies</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div id="main">
-                    <div>
-                        <h1 id="splash">I doubt anyone's seen this text before! (Error loading splash)</h1>
-                        <script src="../JS/getSplashText.js"></script>
-                        <p> 
-                            Welcome to my Neocities page!!<br>
-                            This is my corner of the internet where I let myself play around with HTML, CSS, and JS.
-                        </p>
-                        <p> 
-                            You can call me Ringo, Vincent, or Alexandre. I'm 19 and a current sophomore at Rensselaer Polytechnic Institute
-                            studying computer science! Unfortunately, webdev isn't part of my curriculum, so all of this is self-taught and done
-                            during my free time.
-                        </p>
-                        <p>
-                            I've tried making websites in the past, but always gave up because I didn't feel like I was good at it. That trend 
-                            ends here! Buckle up and enjoy the ride!
-                        </p>
-                        <p>
-                            But that's enough about me! Have you ever noticed that this section's header changes every time you reload the page?
-                            What about the music player, have you ever tried that?
-                        </p>
-                    </div>
-                    <div id="changelog">
-                        <h1>Site Changelog</h1>
-                        <p>
-                            Release 8:<br>
-                            <ul>
-                                <li>Xenoblade 2 title screen replica now features a theme switcher (Chapter Select)</li>
-                                <li>For the most part the title screen replica is finished! The work on the actual shrine begins now!</li>
-                                <li>Shrines button now directly links to Xenoblade shrine as no other one will be implemented for a while.</li>
-                            </ul>
-                            <a href="/MISC/changelogs.txt" target="_blank">View changelog history</a>
-                        </p>
-                    </div>
-                    <div id="webring">
-                        <h1>Button Collection</h1>
-                        <p id="copied"></p>
-                        <div style="display:inline-flex; border:none; flex-wrap: wrap;">
-                            <img src="IMG/ringori.png" onclick="copyButton()" title="Click to copy my button!" style="cursor: pointer;">
-                            <a href='https://metrospirit.neocities.org/' target='_blank'><img src='https://metrospirit.neocities.org/images/splatbutton1.gif'></a>
-                            <a href="https://nebbu.neocities.org/" target="_blank"><img src="https://nebbu.neocities.org/images/nebbubutton2.gif"></a>
-                            <a href="https://msmaryam.neocities.org/" target="_blank"><img src="https://msmaryam.neocities.org/maryambadge.gif"></a>
-                            <a href='https://southdakota.neocities.org/' target="_blank"><img src='https://southdakota.neocities.org/images/sdbutton.png'></a>
-                            <a href='https://puffyf1sh.neocities.org/' target="_blank"><img src='https://puffyf1sh.neocities.org/resources/button.jpg'></a>
-                            <a href="https://distraxx.neocities.org/" target="_blank"><img src="https://distraxx.neocities.org/distraxx_button.gif"></a>
-                            <a href="https://chattable.neocities.org/" target="_blank"><img src="https://chattable.neocities.org/chattable-alt.gif"/></a>
-                            <a href="https://wildrage.neocities.org/" target="_blank"><img src="https://wildrage.neocities.org/images/button.png"></a>
-                        </div>
-                    </div>
-                    <div id="about">
-                        <h1>Interests and Hyperfixations</h1>
-                        <ul>
-                            <li>Xenoblade Chronicles <em>(Series)</em></li>
-                            <li>Fire Emblem <em>(Specifically Shadow Dragon [2011], Three Houses)</em></li>
-                            <li>Cars <em>(I drive a 2000 Mustang <3)</em></li>
-                            <li>Persona <em>(Series)</em></li>
-                            <li>NieR <em>(Series)</em></li>
-                            <li>Pokemon <em>(Including side games like Conquest, and the Ranger series)</em></li>
-                            <li>Metaphor: ReFantazio</li>
-                            <li>Virtual Reality</li>
-                            <li>Rhythm Games <em>(Muse Dash, Beat Saber)</em></li>
-                            <li>Rock/Metal/Punk Music <em>(Korn, Loathe, Sleep Token, Silent Dress, Emery)</em></li>
-                            <li>Webdev</li>
-                        </ul>
-                    </div>
-                    <div id="dualContainer" style="display:inline-flex;">
-                        <div id="blogContainer" style="flex-grow: 1; border-bottom:none">
-                            <h1 id="updates">Personal Updates</h1>
-                            <div id="postContainer"></div>
-                            <script src="JS/getBlogPosts.js"></script>
-                        </div>
-                        <div id="chatbox" style="flex-grow: 1; ">
-                            <h1>Chatbox</h1>
-                            <iframe src='https://iframe.chat/embed/index.html?chat=Ringori_Chatbox' id='chattable'></iframe>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div id="footer">
-                <p>Website Design by Ringo Origo (Ringori) - Last Updated Nov.15.2024</p>
-            </div>
-
+        <!-- This is the content displayed BEFORE pressing anything. Just a loading gif. -->
+        <script src="../../../JS/transitionDivs.js"></script>
+        <div id="loadingScreen" onClick="transition()">
+            <p>(Click Anywhere to Continue)<br>This page is not mobile friendly.</p>
+            <img id="loadingGIF" src="../../../IMG/XC2_Loading_Glyph.gif">
         </div>
 
+        <!-- This is the content displayed once the user clicks on the loading screen -->
+        <script src="../../../JS/titleScreenAudio.js"></script>
+        <audio id="audioEmbed" loop src="https://kappa.vgmsite.com/soundtracks/xenoblade-2-original-sound-version/fltdxpfxcm/2-03%20-%20%20Where%20We%20Used%20To%20Be.mp3"></audio>
+        
+        <div id="container" style="display:none">
+            <img id="gameLogo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.launchbox-app.com%2Ff9034d91-058d-4855-be75-7a8f76678856.png&f=1&nofb=1&ipt=87b6db007aeb0fbf5d350925d6d0e1abe143f7d44195f0ec87dafd36205847dd&ipo=images">
+            <div id="menuOptions">
+                <a href="shrine.html">Continue to Shrine</a>
+                <a id="musicButton" onClick="toggleMute()" style="cursor:pointer;">Mute Music</a>
+                <a href="https://www.youtube.com/playlist?list=PLpVpBRIlzWuBhafF49DkSHb1RMyrtv390">Events Theater</a>
+                <a id="themeSelectButton" onClick="openThemeMenu()" style="cursor:pointer;">Chapter Select</a>
+                <a href="../../Shrines/">Exit</a>
+            </div>
+        </div>
+
+        <div id="containerBuffer" style="display:none;">
+            <img id="gameLogo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.launchbox-app.com%2Ff9034d91-058d-4855-be75-7a8f76678856.png&f=1&nofb=1&ipt=87b6db007aeb0fbf5d350925d6d0e1abe143f7d44195f0ec87dafd36205847dd&ipo=images">
+            <div id="menuOptions">
+                <a href="shrine.html">Continue to Shrine</a>
+                <a id="musicButton" onClick="toggleMute()" style="cursor:pointer;">Mute Music</a>
+                <a href="https://www.youtube.com/playlist?list=PLpVpBRIlzWuBhafF49DkSHb1RMyrtv390">Events Theater</a>
+                <a id="themeSelectButton" onClick="openThemeMenu()" style="cursor:pointer;">Chapter Select</a>
+                <a href="../../Shrines/">Exit</a>
+            </div>
+        </div>
+
+        <!-- This is the menu to select a new theme, each one corresponds to a title screen in Xenoblade 2 -->
+        <div id="menuContainer" style="display:none;">
+            <a onclick="setTheme(0)">Chapter 0</a>
+            <a onclick="setTheme(1)">Chapter 1</a>
+            <a onclick="setTheme(2)">Chapter 2</a>
+            <a onclick="setTheme(3)">Chapter 3</a>
+            <a onclick="setTheme(4)">Chapter 4</a>
+            <a onclick="setTheme(5)">Chapter 5</a>
+            <a onclick="setTheme(6)">Chapter 6</a>
+            <a onclick="setTheme(7)">Chapter 7</a>
+            <a onclick="setTheme(8)">Chapter 8</a>
+            <a onclick="setTheme(9)">Chapter 9</a>
+            <a onclick="setTheme(10)">Chapter 10</a>
+            <a onclick="setTheme(11)">Post-Game</a>
+        </div>
     </body>
 
 </html>

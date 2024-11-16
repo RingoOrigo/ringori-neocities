@@ -1,0 +1,255 @@
+:root {
+    --chapterZeroBG: url('https://i.imgur.com/gBeGTk8.jpeg');
+}
+
+.arsenal-regular {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Definitions to make the animation for fading out into the title screen once clicked. */
+.fadeOut {
+    animation: fadeOut ease 1s forwards;
+    animation-iteration-count: 1;
+}
+.fadeIn {
+    animation: fadeIn ease 1s forwards;
+    animation-iteration-count: 1;
+}
+
+/* 
+    This is the CSS for the "loading screen"
+        Really this screen exists to force autoplay on every browser lmao
+*/
+
+#loadingScreen {
+    /* 
+        Not a big fan of hardcoding all of this, but tbh it doesn't need to be super responsive.
+            This is the code to make the entire screen black.
+    */
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0px;
+    top: 0px;
+
+    /* And this is the code to allow you to click literally anywhere on the screen to continue */
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#loadingScreen p{
+    color: #ffffff31;
+    font-family: "Arsenal", sans-serif;
+    font-size: 24pt;
+
+    font-style: italic;
+
+    position: absolute;
+    width:100%;
+    height:100%;
+    align-content: center;
+    text-align: center;
+}
+
+#loadingScreen img {
+    position: absolute;
+    right: 2%;
+    bottom: 0PX;
+}
+
+/*
+    The main container of the page. Basically just display everything
+        in a downward column, centered on the screen.
+*/
+
+#container {
+    /* Layout definitions, to get the downward centered column */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: var(--chapterZeroBG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Used as a buffer to fade into different theme selections */
+#containerBuffer {
+    /* Layout definitions, to get the downward centered column */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: var(--chapterZeroBG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container img {
+    width: 50%;
+    height: auto;
+}
+
+#containerBuffer img {
+    width: 50%;
+    height: auto;
+}
+
+#container a {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 40pt;
+    text-decoration: none;
+    color: #7bb1e4;
+    padding: 0px 20px 0px 20px;
+    text-shadow: #1c335d 0px 0px 2px, #1c335d 0px 0px 2px, #1c335d 0px 0px 2px, #1c335d 0px 0px 2px, #1c335d 0px 0px 2px;
+}
+
+#containerBuffer a {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 40pt;
+    text-decoration: none;
+    color: #7bb1e4;
+    padding: 0px 20px 0px 20px;
+    text-shadow: #1c335d 0px 0px 2px, #1c335d 0px 0px 2px, #1c335d 0px 0px 2px, #1c335d 0px 0px 2px, #1c335d 0px 0px 2px;
+}
+
+#container a:hover {
+    color: #fafdff;
+    text-shadow: #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px;
+    background-image: url("../IMG/menuHighlight.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+#containerBuffer a:hover {
+    color: #fafdff;
+    text-shadow: #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px;
+    background-image: url("../IMG/menuHighlight.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+#menuContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    justify-content: center;
+}
+
+#menuContainer a {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 32pt;
+    text-decoration: none;
+    color: #7bb1e4;
+    padding: 0px 20px 0px 20px;
+    cursor: pointer;
+    text-shadow: #1c335d 0px 0px 2px, #1c335d 0px 0px 2px, #1c335d 0px 0px 2px, #1c335d 0px 0px 2px, #1c335d 0px 0px 2px;
+}
+
+#menuContainer a:hover {
+    color: #fafdff;
+    text-shadow: #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px, #3c76bb 0px 0px 4px;
+    background-image: url("../IMG/menuHighlight.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+#menuOptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+body {
+    /* Setting height to 100% prevents weird scaling on mobile and such */
+    height: 100%;
+    background-color: black;
+
+    font-family: "Arsenal", sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    color: white;
+}
+
+@media(orientation:portrait) {
+    #menuContainer a{
+        font-size: 14pt;
+        margin-bottom: 2px;
+        margin-right: 4px;
+    }
+
+    #container a{
+        margin-left: 10%;
+        font-size: 18pt;
+    }
+
+    #containerBuffer a {
+        font-size: 18pt;
+    }
+}
